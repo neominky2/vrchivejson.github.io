@@ -81,8 +81,8 @@
     "yaml": "^2.3.1"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./pages/style.css -o ./data/tailwind.css --build",
-    "buildCSS": " postcss ./data/tailwind.css -o ./data/output.css",
+    "build": "npx tailwindcss -i ./pages/style.css -o ./data/style/tailwind.css --build",
+    "buildCSS": " postcss ./data/tailwind.css -o ./data/style/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
