@@ -2018,6 +2018,11 @@ video {
   padding: 2rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2744,6 +2749,15 @@ video {
     justify-content: center;
   }
 
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -2753,6 +2767,10 @@ video {
 @media (min-width: 1024px) {
   .lg\:w-4\/12 {
     width: 33.333333%;
+  }
+
+  .lg\:p-6 {
+    padding: 1.5rem;
   }
 }
 
