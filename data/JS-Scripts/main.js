@@ -1,5 +1,4 @@
-
-if (window.location.pathname.includes("index.html")) {
+if (document.title == "Avatar Repo :: HomePage") {
   console.log("No Need For Navigation Panel");
 } else {
   const navigationPanel = `<div class="" id="nav">
@@ -76,7 +75,10 @@ if (window.location.pathname.includes("index.html")) {
   navContainer.innerHTML = navigationPanel;
 }
 
-if (window.location.pathname.includes("Clothes_Original.html")) {
+if (
+  document.title == "Avatar Repo :: HomePage" ||
+  document.title == "Avatar Repo :: Clothing Original"
+) {
 } else {
   const mainSection = document.getElementById("main-section");
 
@@ -109,4 +111,3 @@ menuBtn.forEach((btn) => {
     console.log("Menu Button Clicked");
   });
 });
-
