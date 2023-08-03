@@ -1,3 +1,4 @@
+
 if (window.location.pathname.includes("index.html")) {
   console.log("No Need For Navigation Panel");
 } else {
@@ -108,3 +109,4 @@ menuBtn.forEach((btn) => {
     console.log("Menu Button Clicked");
   });
 });
+
