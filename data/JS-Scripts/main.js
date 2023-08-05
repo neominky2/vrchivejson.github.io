@@ -1,13 +1,4 @@
-const menuBtn = document.querySelectorAll(".menu-btn");
-const navigation = document.querySelector("#navigation");
-
-menuBtn.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    navigation.classList.toggle("-translate-x-full");
-  });
-});
-
-if (window.location.pathname.includes("index.html")) {
+if (document.title == "Avatar Repo :: HomePage") {
   console.log("No Need For Navigation Panel");
 } else {
   const navigationPanel = `<div class="" id="nav">
@@ -84,7 +75,10 @@ if (window.location.pathname.includes("index.html")) {
   navContainer.innerHTML = navigationPanel;
 }
 
-if (window.location.pathname.includes("Clothes_Original.html")) {
+if (
+  document.title == "Avatar Repo :: HomePage" ||
+  document.title == "Avatar Repo :: Clothing Original"
+) {
 } else {
   const mainSection = document.getElementById("main-section");
 
@@ -106,3 +100,14 @@ type="text" placeholder="search" oninput="filterAvatars(this.value)"></div></div
     });
   }
 }
+
+const menuBtn = document.querySelectorAll(".menu-btn");
+const navigation = document.querySelector("#navigation");
+
+menuBtn.forEach((btn) => {
+  console.log("Menu Loaded");
+  btn.addEventListener("click", () => {
+    navigation.classList.toggle("-translate-x-full");
+    console.log("Menu Button Clicked");
+  });
+});
