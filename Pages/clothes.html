@@ -9,9 +9,9 @@
     <link rel="shortcut icon" href="../data/img/favicons/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="../data/style/output.css">
-    
-    <script  src="../data/JS-Scripts/rivet.js"></script>
-    
+
+    <script src="../data/JS-Scripts/rivet.js"></script>
+
     <!-- <script defer src="https://cdn.tailwindcss.com"></script> -->
 
 </head>
@@ -69,7 +69,7 @@
     </div>
 
     <script src="../data/JS-Scripts/main.js"></script>
-    <script src="../data/JS_FORMAT/clothing.js"></script>
+    <!-- <script src="../data/JS_FORMAT/clothing.js"></script> -->
 
 
     <script>
@@ -79,11 +79,9 @@
         });
 
         window.onload = function () {
-            loadData();
-        }
-
-        async function loadData() {
-            data.push(...clothing)
+            getData("../data/JSON_FORMAT/clothes.json").then(avatar => {
+                data.push(...avatar)
+            })
         }
 
 

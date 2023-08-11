@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../data/style/output.css">
 
 
-    
-    
+
+
     <script src="../data/JS-Scripts/rivet.js"></script>
-    
+
     <!-- <script defer src="https://cdn.tailwindcss.com"></script> -->
 
 
@@ -75,24 +75,21 @@
     </div>
 
 
-    <script src="../data/JS_FORMAT/avatar.js"></script>
     <script src="../data/JS-Scripts/main.js"></script>
-
+    <!-- <script src="../data/JS_FORMAT/avatar.js"></script> -->
 
     <script>
+
         const data = [];
         rivets.bind(document.querySelector('body'), {
             data: data
         });
 
         window.onload = function () {
-            loadData();
+            getData("../data/JSON_FORMAT/avatar.json").then(avatar => {
+                data.push(...avatar)
+            })
         }
-
-        async function loadData() {
-            data.push(...avatar)
-        }
-
 
 
     </script>
