@@ -13,6 +13,41 @@
 
     <script src="./data/JS-Scripts/rivet.js"> </script>
 
+    <style>
+        .counter-items {
+            animation: counter 500ms ease-in-out;
+        }
+
+        @keyframes counter {
+            0% {
+                scale: 0.5;
+                transform: translateY(50%);
+                opacity: 0;
+            }
+
+            100% {
+                scale: 1;
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        #overlay-content {
+            animation: overlay-content 1s ease-in-out;
+        }
+
+        @keyframes overlay-content {
+            0% {
+                opacity: 0;
+                transform: translateY(-10%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+    </style>
 </head>
 
 <body class="w-full h-screen overflow-hidden contaier-snap bg-slate-900 text-white">
