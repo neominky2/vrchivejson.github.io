@@ -1,7 +1,4 @@
-if (document.title == "Avatar Repo :: HomePage") {
-  console.log("No Need For Navigation Panel");
-} else {
-  const navigationPanel = `<div class="" id="nav">
+const navigationPanel = `<div class="" id="nav">
 <nav class="w-full h-screen absolute md:sticky top-0 bg-slate-900 -translate-x-full md:-translate-x-0 transtition-all duration-500  md:h-min"
     id="navigation">
     <div class=" flex flex-col md:flex-row text-white w-full">
@@ -71,9 +68,8 @@ if (document.title == "Avatar Repo :: HomePage") {
 </button>
 </div>`;
 
-  const navContainer = document.getElementById("nav-container");
-  navContainer.innerHTML = navigationPanel;
-}
+const navContainer = document.getElementById("nav-container");
+navContainer.innerHTML = navigationPanel;
 
 if (
   document.title == "Avatar Repo :: HomePage" ||
@@ -111,3 +107,9 @@ menuBtn.forEach((btn) => {
     console.log("Menu Button Clicked");
   });
 });
+
+async function getData(URL) {
+  return fetch(URL)
+    .then((res) => res.json())
+    .then((data) => data);
+}

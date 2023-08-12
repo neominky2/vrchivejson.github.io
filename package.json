@@ -81,9 +81,9 @@
     "yaml": "^2.3.1"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./pages/style.css -o ./data/style/tailwind.css --build",
+    "buildVrc": "npx tailwindcss -i ./pages/style.css -o ./data/style/tailwind.css --build",
     "minifyCSS":"npx tailwindcss -o ./data/style/tailwind.css --minify",
-    "buildCSS": " postcss ./data/style/tailwind.css -o ./data/style/output.css",
+    "postVrc": " postcss ./data/style/tailwind.css -o ./data/style/output.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
