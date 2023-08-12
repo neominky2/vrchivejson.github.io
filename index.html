@@ -13,31 +13,70 @@
 
     <script src="./data/JS-Scripts/rivet.js"> </script>
 
+    <style>
+        .counter-items {
+            animation: counter 500ms ease-in-out;
+        }
+
+        @keyframes counter {
+            0% {
+                scale: 0.5;
+                transform: translateY(50%);
+                opacity: 0;
+            }
+
+            100% {
+                scale: 1;
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        #overlay-content {
+            animation: overlay-content 1s ease-in-out;
+        }
+
+        @keyframes overlay-content {
+            0% {
+                opacity: 0;
+                transform: translateY(-10%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+    </style>
 </head>
 
 <body class="w-full h-screen overflow-hidden contaier-snap bg-slate-900 text-white">
 
     <div class="absolute h-screen w-full bg-black z-10 transtition-all duration-[2s] ease-in-out " id="NomNomOverLay">
-        <div class="w-full h-full flex flex-col items-center justify-center gap-10">
+        <div class="w-full h-full flex flex-col items-center justify-center gap-10" id="overlay-content">
             <div class="w-80 md:w-full text-center">
-                <div class="text-xl md:text-2xl lg:text-3xl">
-                    Visits
+                <div class="text-xl md:text-2xl lg:text-3xl font-extralight">
+                    Total Visits
                 </div>
-                <div class="flex flex-row items-center justify-center pt-8  md:gap-4 w-full text-sm md:text-2xl">
-                    <img src="https://count.nett.moe/get/hina_vrchive_visit_counter/img?theme=rule34" alt="Counter">
+                <div
+                    class="flex flex-row items-center justify-center pt-8 gap-1 md:gap-4 w-full text-sm md:text-2xl transition-all h-20">
+                    <span
+                        class="counter-items border-2 border-white w-10 h-10 flex items-center justify-center md:w-14 md:h-14 transition-all "
+                        rv-each-number="data.visits.totalVisits">
+                        <span class=" font-bold ">{number}</span>
+                    </span>
                 </div>
             </div>
-            <div class=" w-80  gap-4 text-center text-xl font-medium flex flex-col items-center">
-
+            <div class=" w-80 gap-4 text-center text-xl font-medium flex flex-col items-center">
                 <div>
                     <p>
-                        Original Data from <a target="_blank" href="https://github.com/vrchivejson"
+                        Original Data from <br><a target="_blank" href="https://github.com/vrchivejson"
                             class="text-teal-200">
-                            VRChiveJSON
+                            vrchivejson GitHub Repo
                         </a>
                     </p>
-                    <p class="py-4">
-                        Pages by: <span class="text-amber-500 text-2xl">Nommiiee</span>
+                    <p class="pt-4">
+                        Frontend By : <span class="text-amber-500 text-2xl">Nommiiee</span>
                     </p>
                 </div>
                 <div class="flex justify-center gap-x-4 scale-110">
@@ -67,7 +106,7 @@
                 </div>
                 <button id="NomNomBtn"
                     class="w-full py-2 px-8 border-2 border-white text-white text-xl font-medium hover:bg-amber-500 hover:text-black transtition-all duration-500">
-                    Continue
+                    Click Me!
                 </button>
             </div>
         </div>
@@ -75,53 +114,53 @@
 
 
     <div class="w-full ">
-        <div class="w-full h-full md:flex md:flex-wrap text-center font-sans font-semibold">
+        <div
+            class="w-full h-full md:flex md:flex-wrap text-center font-sans font-semibold text-white text-xl tmd:text-2xl">
             <div class="relative w-full h-[25vh] bg-center bg-cover md:w-6/12  md:h-[50vh]"
-                style="background-image:url(/data/img/Avatar_Foxy.webp);">
+                style="background-image:url(./data/img/Avatar_Foxy.webp);">
                 <div
                     class="w-full h-full flex items-center justify-center bg-black bg-opacity-70 hover:bg-opacity-50 transition-all duration-1000 ease-in-out">
-                    <a href="/Pages/Avatars.html"
-                        class="text-white text-3xl border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
+                    <a href="./Pages/Avatars.html"
+                        class=" border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
                         Avatar
                     </a>
                 </div>
             </div>
             <div class="relative w-full h-[25vh] bg-center bg-cover md:w-6/12 md:h-[50vh]"
-                style="background-image:url(/data/img/Avatar_Rusk.webp);">
+                style="background-image:url(./data/img/Avatar_Rusk.webp);">
                 <div
                     class="w-full h-full flex items-center justify-center bg-black bg-opacity-70 hover:bg-opacity-50 transition-all duration-1000 ease-in-out">
-                    <a href="/Pages/Avatar_Original.html"
-                        class="text-white text-3xl border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
+                    <a href="./Pages/Avatar_Original.html"
+                        class=" border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
                         Avatar Original
                     </a>
                 </div>
             </div>
             <div class="relative w-full h-[25vh] bg-center bg-cover md:w-6/12 md:h-[50vh]"
-                style="background-image:url(/data/img/Clothing.webp);">
+                style="background-image:url(./data/img/Clothing.webp);">
                 <div
                     class="w-full h-full flex items-center justify-center bg-black bg-opacity-70 hover:bg-opacity-50 transition-all duration-1000 ease-in-out">
-                    <a href="/Pages/clothes.html"
-                        class="text-white text-3xl border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
+                    <a href="./Pages/clothes.html"
+                        class=" border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
                         Clothing
                     </a>
                 </div>
             </div>
             <div class="relative w-full h-[25vh] bg-center bg-cover md:w-6/12 md:h-[50vh]"
-                style="background-image:url(/data/img/Clothing_Orignal.webp);">
+                style="background-image:url(./data/img/Clothing_Orignal.webp);">
                 <div
                     class="w-full h-full flex items-center justify-center bg-black bg-opacity-70 hover:bg-opacity-50 transition-all duration-1000 ease-in-out">
-                    <a href="/Pages/Clothes_Original.html"
-                        class="text-white text-3xl border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
+                    <a href="./Pages/Clothes_Original.html"
+                        class=" border border-white py-2 w-10/12 md:w-80 lg:w-96 hover:bg-amber-500 transition-all duration-500">
                         Clothing Original
                     </a>
                 </div>
             </div>
         </div>
-
     </div>
 
 
-    <script src="index.js "></script>
+    <script src="./index.js"></script>
 
     <script defer>
         const NomNomOverLayer = document.getElementById("NomNomOverLay");
@@ -130,7 +169,24 @@
             NomNomOverLayer.classList.add("-translate-y-full");
         });
 
+
         rivets.bind(document.querySelector('body'), { data: data });
+
+        const URI = "https://visitor.cyclic.app/visits/vrchive";
+        fetch(URI, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(res => {
+            return res.json()
+        }).then(visitor => {
+            data.visits = visitor
+            data.visits.totalVisits = data.visits.totalVisits.toString().split("")
+        }).catch(err => {
+            data.visits.totalVisits = ["0", "0", "0", "0", "0",]
+        })
+
     </script>
 
 </body>
