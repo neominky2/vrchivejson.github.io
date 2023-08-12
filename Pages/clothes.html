@@ -80,6 +80,9 @@
 
         window.onload = function () {
             getData("../data/JSON_FORMAT/clothes.json").then(avatar => {
+                getData("../data/JSON_FORMAT/clothes.json").then(avatar => {
+                    data.push(...avatar)
+                })
                 data.push(...avatar)
             })
         }
