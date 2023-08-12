@@ -79,10 +79,7 @@
         });
 
         window.onload = function () {
-            getData("../data/JSON_FORMAT/clothes.json").then(avatar => {
-                getData("../data/JSON_FORMAT/clothes.json").then(avatar => {
-                    data.push(...avatar)
-                })
+            getData("../data/JSON_FORMAT/premium-clothes.json").then(avatar => {
                 data.push(...avatar)
             })
         }
