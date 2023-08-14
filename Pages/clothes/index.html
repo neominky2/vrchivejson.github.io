@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avatar Repo :: Clothing</title>
 
-    <link rel="shortcut icon" href="../data/img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../data/src/img/favicons/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="../data/style/output.css">
+    <link rel="stylesheet" href="../../data/src/styling/output.css">
+    <link rel="stylesheet" href="../../data/src/styling/style.css">
+    <script src="../../data/src/scripts/rivet.js"></script>
 
-    <script src="../data/JS-Scripts/rivet.js"></script>
+    <!-- <script defer src="https://cdn.tailwindcss.com"></script>   -->
 
-    <!-- <script defer src="https://cdn.tailwindcss.com"></script> -->
 
 </head>
 
@@ -68,7 +69,8 @@
         </div>
     </div>
 
-    <script src="../data/JS-Scripts/main.js"></script>
+    <script src="../../data/src/scripts/main.js"></script>
+
     <script>
         const data = [];
         rivets.bind(document.querySelector('body'), {
@@ -76,7 +78,7 @@
         });
 
         window.onload = function () {
-            getData("./fetch/premium-clothes.json").then(clothing => {
+            getData("../fetch/premium-clothes.json").then(clothing => {
                 data.push(...clothing)
             })
         }

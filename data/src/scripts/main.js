@@ -1,4 +1,4 @@
-const navigationPanel = `<div class="" id="nav">
+const navigationPanel = ` <div class="" id="nav">
 <nav class="w-full h-screen absolute top-0 bg-slate-900 -translate-x-full  transtition-all duration-500 lg:sticky lg:-translate-x-0 lg:h-min"
     id="navigation">
     <div class=" flex flex-col lg:flex-row  text-white w-full">
@@ -7,7 +7,7 @@ const navigationPanel = `<div class="" id="nav">
             Close
         </button>
         <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
-            href="../index.html">
+            href="../../">
             <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -17,7 +17,7 @@ const navigationPanel = `<div class="" id="nav">
             <span>VRChive</span>
         </a>
         <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
-            href="./Assets.html">
+            href="../vr-assets/">
             <span class="lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -28,7 +28,7 @@ const navigationPanel = `<div class="" id="nav">
             <span>Assets</span>
         </a>
         <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
-            href="./Avatars.html">
+            href="../avatars/">
             <span class="lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -39,7 +39,7 @@ const navigationPanel = `<div class="" id="nav">
             <span>Avatar</span>
         </a>
         <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
-            href="./Clothes.html">
+            href="../clothes/">
             <span class="lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -50,7 +50,7 @@ const navigationPanel = `<div class="" id="nav">
             <span>Clothing</span>
         </a>
         <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
-            href="./Shaders.html">
+            href="../shaders/">
             <span class="lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
@@ -61,7 +61,7 @@ const navigationPanel = `<div class="" id="nav">
             <span>Shaders</span>
         </a>
         <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
-            href="./Textures.html">
+            href="../textures/">
             <span class="lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
