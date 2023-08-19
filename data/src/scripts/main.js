@@ -71,6 +71,17 @@ const navigationPanel = ` <div class="" id="nav">
             </span>
             <span>Textures</span>
         </a>
+        <a class="p-4 border-b-2 border-white w-full flex item-center gap-2 hover:bg-amber-500 hover:text-black hover:border-amber-500 font-medium transtition-all duration-500 lg:justify-center"
+            href="../want/">
+            <span class="lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                </svg>
+            </span>
+            <span>Want</span>
+        </a>
     </div>
 </nav>
 <button
